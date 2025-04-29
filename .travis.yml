@@ -21,6 +21,6 @@ deploy:
   default_text_charset: "utf-8"
   cache_control: "max-age=21600"
   on:
-    branch: main
+    all_branches: true
 notifications:
   email: false  
