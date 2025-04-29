@@ -7,12 +7,6 @@
 
 This is a testing suite for the provided javascript library under /src folder.
 
-## Team
-
-**Group:** sleepyheads
-
-**Members:** Miikka Mänttäri, Tamara Islam Meghla
-
 # How to run
 
 ## Dependencies
@@ -31,7 +25,7 @@ You can find the travis pipeline report and the coveralls code coverage report f
 
 # S3 report
 
-Find the s3 report of the project at ``https://testing-course-bucket.s3.amazonaws.com/report/mochawesome.html``
+Find the s3 report of the project at 
 
 # Legal
 
