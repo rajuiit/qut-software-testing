@@ -1,0 +1,12 @@
+## Node modules
+node_modules
+
+## Generated mochawesome report
+mochawesome-report
+
+## coveralls information
+.coveralls.yml
+coverage
+
+## aws s3 secret key unencrypted
+s3key.txt

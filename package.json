@@ -1,0 +1,22 @@
+{
+  "name": "software-testing-assignment",
+  "version": "1.0.0",
+  "description": "Assignment",
+  "main": "",
+  "type": "module",
+  "scripts": {
+    "test": "c8 --include src --exclude src/.internal mocha  --reporter mochawesome",
+    "report:lcov": "c8 report --include src --exclude src/.internal --reporter=lcov",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "c8": "^7.3.5",
+    "chai": "^4.2.0",
+    "coveralls": "^3.1.0",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1"
+  }
+}
