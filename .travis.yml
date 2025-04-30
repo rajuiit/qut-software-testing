@@ -1,13 +1,20 @@
 language: node_js
 node_js:
-- node
+  - node
+
 install:
-- npm ci
+  - npm ci
+
 script:
-- npm run test || true
-- npm run report:lcov
-- npm run coveralls
-- rm -rf ./coverage 
+  - npm run test || true
+  - npm run report:lcov
+  - npm run coveralls
+  - rm -rf ./coverage 
+
+before_deploy:
+  - echo "Checking mochawesome-report directory:"
+  - ls -al mochawesome-report || echo "Directory not found!"
+
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
@@ -22,5 +29,6 @@ deploy:
   cache_control: "max-age=21600"
   on:
     all_branches: true
+
 notifications:
-  email: false  
+  email: false
